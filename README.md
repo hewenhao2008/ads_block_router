@@ -1,4 +1,7 @@
-# ads_block
+# ads_block_router
+
+***This scripts for fast block ads on your router***
+
 For block ADS **DD-WRT** open
 Administration->Commands->Save Startup
 ```sh
@@ -7,7 +10,7 @@ sleep 5; wget http://winhelp2002.mvps.org/hosts.txt -O - -q | grep 0.0.0.0 | sed
 
 
 For block ADS **OPENWRT** 
-copy paste your roter ssh code:
+copy paste your roter in ssh next code:
 ```sh
 cat << 'EOF' > /etc/init.d/ads_block
 #!/bin/sh /etc/rc.common
