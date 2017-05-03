@@ -8,7 +8,7 @@ Administration->Commands->Save Startup
 
 For block ADS **OPENWRT** 
 copy paste your roter ssh code:
-
+```sh
 cat << 'EOF' > /etc/init.d/ads_block
 #!/bin/sh /etc/rc.common
 START=99
@@ -37,3 +37,4 @@ EOF
 chmod +x /etc/init.d/ads_block
 /etc/init.d/ads_block enable
 /etc/init.d/ads_block start
+```
