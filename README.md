@@ -41,3 +41,10 @@ chmod +x /etc/init.d/ads_block
 /etc/init.d/ads_block enable
 /etc/init.d/ads_block start
 ```
+
+For block ADS **ASUS Merlin** 
+enable JFFS, copy paste your roter in ssh next code:
+```
+wget http://winhelp2002.mvps.org/hosts.txt -O - -q | grep 0.0.0.0 | sed 's/^\(.*\)#.*$/\1/'  > /jffs/configs/hosts_ads
+echo "addn-hosts=/jffs/configs/hosts_ads" > /jffs/configs/dnsmasq.conf.add 
+```
